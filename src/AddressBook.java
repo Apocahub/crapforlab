@@ -19,4 +19,11 @@ public class AddressBook {
 		buddyList.remove(bud);
 	}
 	
+	public static void main(String args[])
+	{
+		AddressBook adbk = new AddressBook();
+		BuddyInfo morecrap = new BuddyInfo();
+		adbk.addBuddy(morecrap);
+	}
+	
 }
