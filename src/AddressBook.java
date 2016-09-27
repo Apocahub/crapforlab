@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class AddressBook {
@@ -6,7 +7,7 @@ public class AddressBook {
 	
 	public AddressBook()
 	{
-		
+		buddyList = new LinkedList<BuddyInfo>();
 	}
 	
 	public void addBuddy(BuddyInfo bud)
@@ -24,6 +25,7 @@ public class AddressBook {
 		AddressBook adbk = new AddressBook();
 		BuddyInfo morecrap = new BuddyInfo();
 		adbk.addBuddy(morecrap);
+		adbk.removeBuddy(morecrap);
 	}
 	
 }
